@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c7z-vj-pyr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New York Time Books-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMCExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A47-jD-Fzw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="f3v-T3-KCd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ixW-Fu-7NT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="A47-jD-Fzw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Im-II-3uF"/>
+                            <constraint firstItem="A47-jD-Fzw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KBq-bD-MXS"/>
+                            <constraint firstItem="A47-jD-Fzw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aZZ-wT-cb0"/>
+                            <constraint firstItem="A47-jD-Fzw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ymV-29-hIH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New York Time Books" id="8Ab-I9-JFw"/>
+                    <connections>
+                        <outlet property="booksTableView" destination="A47-jD-Fzw" id="dAv-a4-jRx"/>
+                        <segue destination="Frg-Ge-mgG" kind="show" identifier="goDetail" id="rGo-Fv-6pP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="i0z-xS-DQU">
+            <objects>
+                <viewController id="Frg-Ge-mgG" customClass="DetailViewController" customModule="MVVMCExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zmV-jy-qQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y9-pL-cEL">
+                                <rect key="frame" x="43" y="113" width="61" height="32"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="In a quiet town on the North Carolina coast in 1969, a young woman who survived alone in the marsh becomes a murder suspect." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XB9-kJ-yZ2">
+                                <rect key="frame" x="43" y="724" width="328" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1WO-0b-Fne"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2KC-wn-Zer">
+                                <rect key="frame" x="43" y="160" width="328" height="544"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XB9-kJ-yZ2" firstAttribute="trailing" secondItem="2KC-wn-Zer" secondAttribute="trailing" id="2HJ-v7-Bqh"/>
+                            <constraint firstItem="2KC-wn-Zer" firstAttribute="leading" secondItem="tx8-xa-fUs" secondAttribute="leading" constant="43" id="3ql-nb-q4W"/>
+                            <constraint firstItem="3Y9-pL-cEL" firstAttribute="leading" secondItem="2KC-wn-Zer" secondAttribute="leading" id="7sq-lX-DoS"/>
+                            <constraint firstItem="tx8-xa-fUs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Y9-pL-cEL" secondAttribute="trailing" symbolic="YES" id="N0z-RX-OU7"/>
+                            <constraint firstItem="XB9-kJ-yZ2" firstAttribute="leading" secondItem="2KC-wn-Zer" secondAttribute="leading" id="OIb-46-XA2"/>
+                            <constraint firstItem="3Y9-pL-cEL" firstAttribute="top" secondItem="tx8-xa-fUs" secondAttribute="top" constant="25" id="Pqs-0S-aOa"/>
+                            <constraint firstItem="2KC-wn-Zer" firstAttribute="centerX" secondItem="zmV-jy-qQ4" secondAttribute="centerX" id="QI1-QE-SZN"/>
+                            <constraint firstItem="2KC-wn-Zer" firstAttribute="top" secondItem="3Y9-pL-cEL" secondAttribute="bottom" constant="15" id="fTl-Yf-VLb"/>
+                            <constraint firstItem="XB9-kJ-yZ2" firstAttribute="top" secondItem="2KC-wn-Zer" secondAttribute="bottom" constant="20" id="jfA-Bf-bNX"/>
+                            <constraint firstItem="tx8-xa-fUs" firstAttribute="bottom" secondItem="XB9-kJ-yZ2" secondAttribute="bottom" constant="10" id="pK7-Zo-TQT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tx8-xa-fUs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Lr-Z9-yL4"/>
+                    <connections>
+                        <outlet property="bookImage" destination="2KC-wn-Zer" id="FsP-1W-1Ac"/>
+                        <outlet property="descriptionText" destination="XB9-kJ-yZ2" id="KJp-VV-apg"/>
+                        <outlet property="titleDetailLabel" destination="3Y9-pL-cEL" id="fuj-ZG-nMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4v6-bu-zOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2121.739130434783" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TQx-Sj-LGb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c7z-vj-pyr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RDI-UN-dvm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nbJ-y6-yfk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0MQ-da-N3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
