@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>45AE91DE-1C8B-497E-8D67-11F91C046283</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>45AE91DE-1C8B-497E-8D67-11F91C046283.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614893353.553967</real>
+			<key>timeStoppedRecording</key>
+			<real>614894330.26128399</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>45AE91DE-1C8B-497E-8D67-11F91C046283</string>
+		</dict>
+		<key>47D5D63A-AD7F-41ED-A651-A07BBE94AF3B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>47D5D63A-AD7F-41ED-A651-A07BBE94AF3B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614896581.52883399</real>
+			<key>timeStoppedRecording</key>
+			<real>614896620.63973701</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>47D5D63A-AD7F-41ED-A651-A07BBE94AF3B</string>
+		</dict>
+		<key>5B43D5AC-7F90-4B4F-9BFD-7DE16FF2C08E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5B43D5AC-7F90-4B4F-9BFD-7DE16FF2C08E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614894333.79272997</real>
+			<key>timeStoppedRecording</key>
+			<real>614896578.59470403</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>5B43D5AC-7F90-4B4F-9BFD-7DE16FF2C08E</string>
+		</dict>
+		<key>5C3E0F75-A515-41B1-9DCF-67B20058CDD5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5C3E0F75-A515-41B1-9DCF-67B20058CDD5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614892841.46295297</real>
+			<key>timeStoppedRecording</key>
+			<real>614892938.40647602</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>5C3E0F75-A515-41B1-9DCF-67B20058CDD5</string>
+		</dict>
+		<key>61CC4578-2713-4708-9BD3-9C5BA30D9410</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>61CC4578-2713-4708-9BD3-9C5BA30D9410.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614897785.62219203</real>
+			<key>timeStoppedRecording</key>
+			<real>614897833.26981497</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>61CC4578-2713-4708-9BD3-9C5BA30D9410</string>
+		</dict>
+		<key>68C5A25B-C3DD-4B58-974A-87C4865B083D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>68C5A25B-C3DD-4B58-974A-87C4865B083D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614893074.74292099</real>
+			<key>timeStoppedRecording</key>
+			<real>614893337.29856896</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>68C5A25B-C3DD-4B58-974A-87C4865B083D</string>
+		</dict>
+		<key>6B7BE576-9448-45E4-970C-843EA9EAE283</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6B7BE576-9448-45E4-970C-843EA9EAE283.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614897758.53984904</real>
+			<key>timeStoppedRecording</key>
+			<real>614897783.14465404</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>6B7BE576-9448-45E4-970C-843EA9EAE283</string>
+		</dict>
+		<key>778DB68C-D0C2-4A09-A978-373F2372F2CE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>778DB68C-D0C2-4A09-A978-373F2372F2CE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614897230.31513095</real>
+			<key>timeStoppedRecording</key>
+			<real>614897246.379287</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>778DB68C-D0C2-4A09-A978-373F2372F2CE</string>
+		</dict>
+		<key>9F8C301D-E897-4D40-972A-9143893FFFB2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9F8C301D-E897-4D40-972A-9143893FFFB2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614896786.55047095</real>
+			<key>timeStoppedRecording</key>
+			<real>614897218.96412599</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>9F8C301D-E897-4D40-972A-9143893FFFB2</string>
+		</dict>
+		<key>D24289A6-FE63-4EB5-9868-EA8EA0F7B867</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D24289A6-FE63-4EB5-9868-EA8EA0F7B867.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614892201.64409101</real>
+			<key>timeStoppedRecording</key>
+			<real>614892836.99888599</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>D24289A6-FE63-4EB5-9868-EA8EA0F7B867</string>
+		</dict>
+		<key>D6FD7585-479A-4BAD-B660-B5CE8532B6EA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D6FD7585-479A-4BAD-B660-B5CE8532B6EA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614896723.01135397</real>
+			<key>timeStoppedRecording</key>
+			<real>614896786.72086203</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>D6FD7585-479A-4BAD-B660-B5CE8532B6EA</string>
+		</dict>
+		<key>E5176918-645A-4F82-A34C-604282E9B421</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E5176918-645A-4F82-A34C-604282E9B421.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614896620.74147296</real>
+			<key>timeStoppedRecording</key>
+			<real>614896639.12473404</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>E5176918-645A-4F82-A34C-604282E9B421</string>
+		</dict>
+		<key>E760998E-23A7-45D9-AB23-EA6B67AE703B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E760998E-23A7-45D9-AB23-EA6B67AE703B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614897248.22681105</real>
+			<key>timeStoppedRecording</key>
+			<real>614897750.47219503</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>E760998E-23A7-45D9-AB23-EA6B67AE703B</string>
+		</dict>
+		<key>FD86741A-E5FB-4C39-BEBA-6782DA0BA929</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FD86741A-E5FB-4C39-BEBA-6782DA0BA929.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MVVMCExample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MVVMCExample</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MVVMCExample</string>
+			<key>timeStartedRecording</key>
+			<real>614897901.60518301</real>
+			<key>timeStoppedRecording</key>
+			<real>614897963.57199502</real>
+			<key>title</key>
+			<string>Debug MVVMCExample</string>
+			<key>uniqueIdentifier</key>
+			<string>FD86741A-E5FB-4C39-BEBA-6782DA0BA929</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

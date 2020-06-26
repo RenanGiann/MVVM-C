@@ -18,6 +18,12 @@
 		CD4ACA57248ACE850039AE7E /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACA56248ACE850039AE7E /* Bindable.swift */; };
 		CD4ACA59248AD0CB0039AE7E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACA58248AD0CB0039AE7E /* ViewModel.swift */; };
 		CD4ACA5B248AD5A00039AE7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACA5A248AD59F0039AE7E /* User.swift */; };
+		CDCF121D24A68B4400EFA980 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF121C24A68B4400EFA980 /* SceneTransitionType.swift */; };
+		CDCF121F24A68B7100EFA980 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF121E24A68B7100EFA980 /* SceneCoordinatorType.swift */; };
+		CDCF122124A68B8800EFA980 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF122024A68B8800EFA980 /* SceneCoordinator.swift */; };
+		CDCF122324A68BD400EFA980 /* BookScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF122224A68BD400EFA980 /* BookScenes.swift */; };
+		CDCF122524A68F1100EFA980 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF122424A68F1100EFA980 /* BindableType.swift */; };
+		CDCF122724A690E000EFA980 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF122624A690E000EFA980 /* DetailViewModel.swift */; };
 		F21FE1782497B5B90022B4DB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21FE1772497B5B90022B4DB /* APIService.swift */; };
 		F21FE17A2497C60F0022B4DB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21FE1792497C60F0022B4DB /* String+.swift */; };
 		F21FE17C2497C8660022B4DB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21FE17B2497C8660022B4DB /* Book.swift */; };
@@ -65,6 +71,12 @@
 		CD4ACA56248ACE850039AE7E /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		CD4ACA58248AD0CB0039AE7E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CD4ACA5A248AD59F0039AE7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CDCF121C24A68B4400EFA980 /* SceneTransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
+		CDCF121E24A68B7100EFA980 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		CDCF122024A68B8800EFA980 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		CDCF122224A68BD400EFA980 /* BookScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScenes.swift; sourceTree = "<group>"; };
+		CDCF122424A68F1100EFA980 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		CDCF122624A690E000EFA980 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F21FE1772497B5B90022B4DB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F21FE1792497C60F0022B4DB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		F21FE17B2497C8660022B4DB /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -125,8 +137,12 @@
 		CD4ACA21248AC50E0039AE7E /* MVVMCExample */ = {
 			isa = PBXGroup;
 			children = (
+				CDCF121B24A6897600EFA980 /* API */,
+				CDCF121A24A6893500EFA980 /* Models */,
+				CDCF121924A6891C00EFA980 /* Services */,
+				CDCF121824A6842400EFA980 /* Coordinator */,
 				F252B8E6249418FD00934597 /* Extension */,
-				CD4ACA55248AC9BD0039AE7E /* Common */,
+				CD4ACA55248AC9BD0039AE7E /* Infrastructure */,
 				CD4ACA52248AC9680039AE7E /* Scenes */,
 				CD4ACA28248AC50E0039AE7E /* Main.storyboard */,
 				CD4ACA2B248AC5100039AE7E /* Assets.xcassets */,
@@ -166,12 +182,10 @@
 		CD4ACA53248AC96E0039AE7E /* BookList */ = {
 			isa = PBXGroup;
 			children = (
-				F21FE17F2497CBEB0022B4DB /* Models */,
+				F21FE1862499062F0022B4DB /* View */,
 				CD4ACA26248AC50E0039AE7E /* ViewController.swift */,
 				CD4ACA58248AD0CB0039AE7E /* ViewModel.swift */,
-				CD4ACA5A248AD59F0039AE7E /* User.swift */,
-				F21FE17D2497CB440022B4DB /* BookListService.swift */,
-				F21FE1862499062F0022B4DB /* View */,
+				CDCF122224A68BD400EFA980 /* BookScenes.swift */,
 			);
 			path = BookList;
 			sourceTree = "<group>";
@@ -180,29 +194,57 @@
 			isa = PBXGroup;
 			children = (
 				F2E3E1482499133D006D4907 /* DetailViewController.swift */,
+				CDCF122624A690E000EFA980 /* DetailViewModel.swift */,
 			);
 			path = BookDetail;
 			sourceTree = "<group>";
 		};
-		CD4ACA55248AC9BD0039AE7E /* Common */ = {
+		CD4ACA55248AC9BD0039AE7E /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
 				CD4ACA22248AC50E0039AE7E /* AppDelegate.swift */,
 				CD4ACA24248AC50E0039AE7E /* SceneDelegate.swift */,
 				CD4ACA56248ACE850039AE7E /* Bindable.swift */,
-				F252B8E424940E4B00934597 /* APIBuilder.swift */,
-				F21FE1772497B5B90022B4DB /* APIService.swift */,
+				CDCF122424A68F1100EFA980 /* BindableType.swift */,
 			);
-			path = Common;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		F21FE17F2497CBEB0022B4DB /* Models */ = {
+		CDCF121824A6842400EFA980 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CDCF121C24A68B4400EFA980 /* SceneTransitionType.swift */,
+				CDCF121E24A68B7100EFA980 /* SceneCoordinatorType.swift */,
+				CDCF122024A68B8800EFA980 /* SceneCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CDCF121924A6891C00EFA980 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F21FE17D2497CB440022B4DB /* BookListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDCF121A24A6893500EFA980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F21FE17B2497C8660022B4DB /* Book.swift */,
 				F21FE1802497CC050022B4DB /* BookRequest.swift */,
+				CD4ACA5A248AD59F0039AE7E /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CDCF121B24A6897600EFA980 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F252B8E424940E4B00934597 /* APIBuilder.swift */,
+				F21FE1772497B5B90022B4DB /* APIService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		F21FE1862499062F0022B4DB /* View */ = {
@@ -359,17 +401,23 @@
 				F252B8E524940E4B00934597 /* APIBuilder.swift in Sources */,
 				F21FE17A2497C60F0022B4DB /* String+.swift in Sources */,
 				F21FE17C2497C8660022B4DB /* Book.swift in Sources */,
+				CDCF122524A68F1100EFA980 /* BindableType.swift in Sources */,
 				F21FE17E2497CB440022B4DB /* BookListService.swift in Sources */,
 				CD4ACA27248AC50E0039AE7E /* ViewController.swift in Sources */,
 				F21FE184249906240022B4DB /* BookListTableViewCell.swift in Sources */,
 				F252B8E8249419A300934597 /* Data+.swift in Sources */,
+				CDCF122324A68BD400EFA980 /* BookScenes.swift in Sources */,
 				F21FE1812497CC050022B4DB /* BookRequest.swift in Sources */,
+				CDCF122124A68B8800EFA980 /* SceneCoordinator.swift in Sources */,
 				CD4ACA5B248AD5A00039AE7E /* User.swift in Sources */,
+				CDCF121F24A68B7100EFA980 /* SceneCoordinatorType.swift in Sources */,
 				CD4ACA23248AC50E0039AE7E /* AppDelegate.swift in Sources */,
 				CD4ACA57248ACE850039AE7E /* Bindable.swift in Sources */,
+				CDCF122724A690E000EFA980 /* DetailViewModel.swift in Sources */,
 				F2E3E1492499133D006D4907 /* DetailViewController.swift in Sources */,
 				F21FE1782497B5B90022B4DB /* APIService.swift in Sources */,
 				CD4ACA25248AC50E0039AE7E /* SceneDelegate.swift in Sources */,
+				CDCF121D24A68B4400EFA980 /* SceneTransitionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

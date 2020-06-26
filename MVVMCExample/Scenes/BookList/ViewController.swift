@@ -8,34 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, BindableType {
+    
+    var viewModel: ViewModelType?
 
     @IBOutlet weak var booksTableView: UITableView!
-    private let viewModel = ViewModel()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupViewModel()
-        
-        
         let nibTexto = UINib(nibName: "BookListTableViewCell", bundle: nil)
         
         self.booksTableView.register(nibTexto, forCellReuseIdentifier: "BookCell")
-        
         self.booksTableView.delegate = self
         self.booksTableView.dataSource = self
     }
     
-    func setupViewModel() {
-        viewModel.booksObservable.bind { [weak self](books) in
-            guard let self = self else {return}
+    func bindViewModel() {
+        viewModel?.outputs.booksObservable.bind { _ in
             DispatchQueue.main.async {
-                 self.booksTableView.reloadData()
+                self.booksTableView.reloadData()
             }
         }
-        viewModel.fetchBooks()
     }
     
 }
@@ -43,13 +37,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfBooks
+        return viewModel?.outputs.numberOfBooks ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath) as! BookListTableViewCell
         
-        let book = viewModel.book(at: indexPath.row)
+        let book = viewModel!.outputs.book(at: indexPath.row)
         
         cell.titleLabel.text = book.title
         cell.authorLabel.text = book.author
@@ -58,7 +52,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goDetail", sender: nil)
+        viewModel?.inputs.navigateToBookDetail()
     }
     
 }

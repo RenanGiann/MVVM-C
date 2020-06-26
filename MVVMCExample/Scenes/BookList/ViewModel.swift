@@ -8,21 +8,43 @@
 
 import Foundation
 
-class ViewModel {
+protocol ViewModelInput {
+    func navigateToBookDetail()
+}
+
+protocol ViewModelOutput {
+    func book(at index: Int) -> Book
+    var booksObservable: Bindable<[Book]> { get set }
+    var numberOfBooks: Int { get }
+}
+
+protocol ViewModelType {
+    var inputs: ViewModelInput { get }
+    var outputs: ViewModelOutput { get }
+}
+
+class ViewModel: ViewModelOutput, ViewModelType {
     
-    var userObservable: Bindable<User> = Bindable<User>()
+    var inputs: ViewModelInput { return self }
+    var outputs: ViewModelOutput { return self }
+    
     var booksObservable: Bindable<[Book]> = Bindable<[Book]>()
-    private let bookService = BookListService()
-    
-    init() {
-        let user = User(name: "Luan", age: 27)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            self.userObservable.value = user
-        })
-    }
     
     var numberOfBooks: Int {
         return self.booksObservable.value?.count ?? 0
+    }
+    
+    private let bookService: NYTimesStoreProtocol
+    private var sceneCoordinator: SceneCoordinatorType //= SceneCoordinator.shared
+    private var scenes: BookScenesRouter //= BookScenes()
+    
+    init(bookService: NYTimesStoreProtocol = BookListService(),
+         sceneCoordinator: SceneCoordinatorType = SceneCoordinator.shared,
+         scenes: BookScenesRouter = BookScenes()) {
+        self.sceneCoordinator = sceneCoordinator
+        self.scenes = scenes
+        self.bookService = bookService
+        fetchBooks()
     }
     
     func book(at index: Int) -> Book {
@@ -30,8 +52,8 @@ class ViewModel {
     }
     
     func fetchBooks() {
-        
-        bookService.requestBooks { (result) in
+        bookService.requestBooks { [weak self] (result) in
+            guard let self = self else { return }
             switch result {
             case .success(let books):
                 self.booksObservable.value = books
@@ -41,5 +63,12 @@ class ViewModel {
             }
             
         }
+    }
+}
+
+extension ViewModel: ViewModelInput {
+    func navigateToBookDetail() {
+        let detailViewModel = DetailViewModel()
+        sceneCoordinator.transition(to: scenes.bookDetail(viewModel: detailViewModel))
     }
 }
