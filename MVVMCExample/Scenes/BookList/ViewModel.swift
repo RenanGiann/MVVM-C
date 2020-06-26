@@ -2,8 +2,8 @@
 //  ViewModel.swift
 //  MVVMCExample
 //
-//  Created by Ginaldo Júnior on 05/06/20.
-//  Copyright © 2020 cristina. All rights reserved.
+//  Created by Renan on 05/06/20.
+//  Copyright © 2020. All rights reserved.
 //
 
 import Foundation
