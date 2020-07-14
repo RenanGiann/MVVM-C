@@ -35,8 +35,8 @@ class ViewModel: ViewModelOutput, ViewModelType {
     }
     
     private let bookService: NYTimesStoreProtocol
-    private var sceneCoordinator: SceneCoordinatorType //= SceneCoordinator.shared
-    private var scenes: BookScenesRouter //= BookScenes()
+    private var sceneCoordinator: SceneCoordinatorType
+    private var scenes: BookScenesRouter
     
     init(bookService: NYTimesStoreProtocol = BookListService(),
          sceneCoordinator: SceneCoordinatorType = SceneCoordinator.shared,
